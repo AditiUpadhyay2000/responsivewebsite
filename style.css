@@ -24,7 +24,7 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url("msg.jpg");
+  background-image: url('msg.jpg');
   background-size: cover;
   color: rgb(177, 79, 136);
   text-align: center;
@@ -36,7 +36,6 @@ a {
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
-
 
 .btn-wrapper {
   text-align: center;
@@ -91,8 +90,8 @@ header {
   margin-top: 20px;
   color: #b36476;
 }
-.sname{
-  color:#55acee;
+.sname {
+  color: #55acee;
 }
 .header-left {
   float: left;
@@ -137,18 +136,31 @@ header {
 .heading {
   padding-top: 80px;
   padding-bottom: 50px;
-  color: #5f5d60;
+  color: #230333;
 }
 
 .heading h2 {
   font-weight: normal;
 }
-
-.lesson {
-  float: left;
-  width: 25%;
+.lessons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
 }
-
+.lesson {
+  width: 25%;
+  border-left: 0.18em solid rgba(255, 255, 255, 0.3);
+  border-top: 0.2em solid rgba(255, 255, 255, 0.3);
+  border-radius: 1em;
+  padding: 0 2em;
+  padding-top: 1em;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+.lesson:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+  z-index: 1;
+}
 .lesson-icon {
   position: relative;
 }
@@ -176,7 +188,8 @@ header {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
-  background: #3f042b;
+  background: #be8eae;
+  color: #09012b;
 }
 
 .message {
@@ -191,8 +204,6 @@ header {
   top: 7px;
   box-shadow: none;
 }
-
-
 
 footer p {
   color: #b3aeb5;
